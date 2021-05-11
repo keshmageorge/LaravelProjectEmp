@@ -18,8 +18,8 @@ class CreateEmployeesTable extends Migration
             $table->string('name',100);
             $table->string('email',100);
             $table->date('joining_date');
-            $table->date('leaving_date');
-            $table->boolean('is_working');
+            $table->date('leaving_date')->nullable();
+            $table->boolean('is_working')->nullable();
             $table->string('image');
             $table->timestamps();
         });
